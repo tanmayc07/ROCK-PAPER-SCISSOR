@@ -117,20 +117,7 @@ class GameFrame1 extends JFrame{
 					JOptionPane.showMessageDialog(c,"Whoosh\nYou have a tie!!");
 				}
 			}
-			/*String name=JOptionPane.showInputDialog(c,"Enter Name");
-			if(no_of_user == 1){
-				JOptionPane.showMessageDialog(c,"Yippee\nYou Won!!");
-				MainFrame mf = new MainFrame();
-				dispose();
-			}else if(no_of_comp == 1){
-				JOptionPane.showMessageDialog(c,"Sorry\nYou Lost!!");
-				MainFrame mf = new MainFrame();
-				dispose();
-			}else if(no_of_ties == 1){
-				JOptionPane.showMessageDialog(c,"Whoosh\nYou have a tie!!");
-				MainFrame mf = new MainFrame();
-				dispose();
-			}*/
+			
 			matchesPlayed++;
 
 			int input = JOptionPane.showConfirmDialog(c,"Do You Wish To Play Again?","Select an option",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
@@ -180,11 +167,6 @@ class GameFrame1 extends JFrame{
 		};
 		btnSubmit.addActionListener(a1);
 
-		/*ActionListener a2 = (ae) -> {
-			new GameFrame1();
-			dispose();
-		};
-		btnPlayAgain.addActionListener(a2);*/
 
 		ActionListener a3 = (ae) -> {
 
